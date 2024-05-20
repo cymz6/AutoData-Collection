@@ -29,6 +29,9 @@ jobs:
       run: |
         git config --global user.name 'cymz6'
         git config --global user.email '95021138@qq.com'
-        git add data/good.json data/book.json
-        git commit -m 'Add updated JSON files' || exit 0
-        git push
+        git add .
+        git commit *.txt -m "Add generated file"
+        git commit *.m3u -m "Add generated file"
+        git commit *.json -m "Add updated JSON files"
+        #git pull --rebase
+        git push -f
