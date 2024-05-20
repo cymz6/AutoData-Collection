@@ -1,0 +1,34 @@
+name: Auto Update
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  push:
+    paths:
+      - 'main.py'
+      - '.github/workflows/main.yml'
+
+jobs:
+  get-json:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x' # specify the Python version you want to use
+
+    - name: Install requests package
+      run: pip install requests
+
+    - name: Run main.py
+      run: python main.py
+
+    - name: Commit and push
+      run: |
+        git config --global user.name 'cymz6'
+        git config --global user.email '95021138@qq.com'
+        git add data/good.json data/book.json
+        git commit -m 'Add updated JSON files' || exit 0
+        git push
