@@ -29,7 +29,6 @@ jobs:
       run: |
         git config --global user.name 'cymz6'
         git config --global user.email '95021138@qq.com'
-        git add .
-        git commit *.json -m "Add updated JSON files"
-        #git pull --rebase
-        git push -f
+        git add data/good.json data/book.json
+        git commit -m 'Add updated JSON files' || exit 0
+        git push https://${{ secrets.PAT }}@github.com/cymz6/autoupdate.git
