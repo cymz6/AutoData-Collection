@@ -23,10 +23,8 @@ def fetch_and_save(url, save_path, user_agent=None):
 
 if __name__ == "__main__":
     # 获取脚本执行的时间戳
-    fetch_and_save('https://quan.suning.com/getSysTime.do', 'data/last_update_time.txt')
+    fetch_and_save('https://quan.suning.com/getSysTime.do', 'data/Script_execution_time.txt')
     # 获取diyp电视直播源接口
-    fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
+    fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/直播源.txt')
     # 获取TVBox肥猫接口
-    fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
-    # 获取TVBox接口q
-    fetch_and_save('http://home.cymz.rr.nu/tvbox/', 'data/tvbox_JC.txt', 'okhttp/3.12.11')
+    fetch_and_save('http://xn--z7x900a.live/', 'data/肥猫.txt', 'okhttp/3.12.11')
