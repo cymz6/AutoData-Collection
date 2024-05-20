@@ -24,11 +24,13 @@ jobs:
 
     - name: Run main.py
       run: python main.py
+      id: run_main
 
     - name: Commit and push
+      if: steps.run_main.outcome == 'success'
       run: |
         git config --global user.name 'cymz6'
         git config --global user.email '95021138@qq.com'
         git add .
-        git commit -m 'Add updated files'
-        git push -f
+        git commit -m 'Automated update from main.py'
+        git push
