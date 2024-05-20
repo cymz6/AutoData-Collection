@@ -8,4 +8,4 @@ def fetch_and_save(url, save_path):
 
 if __name__ == "__main__":
     # 获取lives.txt文件
-    fetch_and_save('https://raw.githubusercontent.com/cymz6/iptv/main/lives.txt', 'data/lives.txt')
+    fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
