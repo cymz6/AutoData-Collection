@@ -1,4 +1,6 @@
 import requests
+import eventlet
+eventlet.monkey_patch()
 
 def fetch_and_save(url, save_path):
     response = requests.get(url)
