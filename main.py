@@ -45,7 +45,7 @@ if __name__ == "__main__":
     current_date = datetime.now().strftime("%Y%m%d")
     zip_filename = f"{current_date}.zip"
 
-    # 创建zip备份文件
+    # 创建data备份文件
     with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
         # 遍历data目录下的所有文件和目录
         for root, dirs, files in os.walk('data'):
