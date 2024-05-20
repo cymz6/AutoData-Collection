@@ -1,9 +1,15 @@
 import requests
 import os
+from datetime import datetime
 
 def fetch_and_save(url, save_path, user_agent=None):
+    # 获取当前日期
+    current_date = datetime.now().strftime("%Y%m%d")
+    # 在保存路径中插入日期戳
+    save_path_with_date = save_path.replace(".txt", f"_{current_date}.txt")
+
     # 确保保存路径的目录存在，如果不存在则创建
-    directory = os.path.dirname(save_path)
+    directory = os.path.dirname(save_path_with_date)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -18,7 +24,7 @@ def fetch_and_save(url, save_path, user_agent=None):
     response.raise_for_status()
 
     # 将内容写入文件
-    with open(save_path, 'wb') as f:
+    with open(save_path_with_date, 'wb') as f:
         f.write(response.content)
 
 if __name__ == "__main__":
