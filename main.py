@@ -32,4 +32,6 @@ if __name__ == "__main__":
     fetch_and_save('http://cdn.qiaoji8.com/tvbox.json', 'data/巧技.txt', 'okhttp/3.12.11')
     # 获取TVBox小米接口
     fetch_and_save('http://xhww.fun/%E5%B0%8F%E7%B1%B3/DEMO.json', 'data/小米.txt', 'okhttp/3.12.11')
+    # 获取TVBox纯一骚零接口
+    fetch_and_save('https://www.100km.top/0', 'data/纯一骚零.txt', 'okhttp/3.12.11')
 
