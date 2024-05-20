@@ -7,3 +7,5 @@ DIYP直播源订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/da
 TVBox巧技订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/巧技.txt
 
 TVBox肥猫订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/肥猫.txt
+
+V2rayNG订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN.txt
