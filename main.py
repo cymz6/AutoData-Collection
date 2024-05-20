@@ -1,5 +1,6 @@
 import requests
 import os
+from datetime import datetime
 
 def fetch_and_save(url, save_path, user_agent=None):
     # 确保保存路径的目录存在，如果不存在则创建
@@ -22,7 +23,11 @@ def fetch_and_save(url, save_path, user_agent=None):
         f.write(response.content)
 
 if __name__ == "__main__":
-    # 获取lives.txt文件, diyp电视直播接口内容
+    # 创建更新文件时间戳
+    timestamp = datetime.now().strftime("%Y%m%d%H%M")
+    save_path_with_timestamp = f'data/uptime_{timestamp}.txt'
+    fetch_and_save('https://www.baidu.com', save_path_with_timestamp)
+    # 获取lives.txt文件, diyp电视直播接口
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
-    # 获取interface.json文件, tvbox肥猫接口
+    # 获取tvbox.txt文件, tvbox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
