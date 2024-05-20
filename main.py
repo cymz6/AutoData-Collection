@@ -36,3 +36,5 @@ if __name__ == "__main__":
     fetch_and_save('https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub', 'data/VPN1.txt')
     # 获取V2rayNG2接口
     fetch_and_save('https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2', 'data/VPN2.txt')
+    # 获取V2rayNG3接口
+    fetch_and_save('https://www.xrayvip.com/ftee.txt', 'data/VPN3.txt')
