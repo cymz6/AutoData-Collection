@@ -15,7 +15,7 @@
     "sites": [
         {
             "key": "drpy_js_豆瓣",
-            "name": "首页┃推荐1",
+            "name": "首页┃推荐",
             "type": 3,
             "api": "http://home.cymz.rr.nu/tvbox/sites/lib/drpy2.min.js",
             "ext": "http://home.cymz.rr.nu/tvbox/sites/js/豆瓣.js"
