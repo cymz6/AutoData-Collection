@@ -30,7 +30,9 @@ if __name__ == "__main__":
     fetch_and_save('http://xn--z7x900a.live/', 'data/肥猫.txt', 'okhttp/3.12.11')
     # 获取TVBox巧技接口
     fetch_and_save('http://cdn.qiaoji8.com/tvbox.json', 'data/巧技.txt', 'okhttp/3.12.11')
-    # 获取V2rayNG接口
-    fetch_and_save('https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt', 'data/VPN.txt')
-    # 获取V2ray2接口
+    # 获取V2rayNG0接口
+    fetch_and_save('https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt', 'data/VPN0.txt')
+    # 获取V2rayNG1接口
     fetch_and_save('https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub', 'data/VPN1.txt')
+    # 获取V2rayNG2接口
+    fetch_and_save('https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2', 'data/VPN2.txt')
