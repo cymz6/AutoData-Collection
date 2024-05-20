@@ -31,5 +31,3 @@ if __name__ == "__main__":
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
     # 获取tvbox.txt文件, tvbox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
-    # 获取tvbox.txt文件, tvbox肥猫接口
-    fetch_and_save('https://quan.suning.com/getSysTime.do', 'dlast_update_tim.txt')
