@@ -29,4 +29,4 @@ if __name__ == "__main__":
     # 获取TVBox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
     # 获取TVBox接口
-    fetch_and_save('http://home.cymz.rr.nu/tvbox/', 'data/tvbox_JC.txt', 'okhttp/3.12.11')
+    fetch_and_save('http://home.cymz.rr.nu/tvbox/interface.json', 'data/tvbox_JC.txt', 'okhttp/3.12.11')
