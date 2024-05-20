@@ -31,4 +31,4 @@ jobs:
         git config --global user.email '95021138@qq.com'
         git add data/good.json data/book.json
         git commit -m 'Add updated JSON files' || exit 0
-        git push https://${{ secrets.PATT}}@github.com/cymz6/autoupdate.git
+        git push -f
