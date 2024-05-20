@@ -1,0 +1,30 @@
+name: AUTO UPDATE
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+
+jobs:
+  get-json:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x' # specify the Python version you want to use
+
+    - name: Install requests package
+      run: pip install requests
+
+    - name: Run main.py
+      run: python main.py
+
+    - name: Commit and push
+      run: |
+        git config --local user.email "95021138@qq.com"
+        git config --local user.name "cymz6"
+        git add data/good.json data/book.json
+        git commit -m 'Add updated JSON files'
+        git push
