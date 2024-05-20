@@ -28,3 +28,5 @@ if __name__ == "__main__":
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/直播源.txt')
     # 获取TVBox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/肥猫.txt', 'okhttp/3.12.11')
+    # 获取TVBox饭太硬接口
+    fetch_and_save('https://www.xn--sss604efuw.top/tv', 'data/饭太硬.txt', 'okhttp/3.12.11')
