@@ -18,6 +18,6 @@ def fetch_and_save(url, save_path, user_agent=None):
 
 if __name__ == "__main__":
     # 获取lives.txt文件, IPTV电视直播文件
-    fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/直播源.txt', 'data/lives.txt')
+    fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/直播源.txt')
     # 获取interface.json文件, tvbox文件
-    fetch_and_save('http://xn--z7x900a.live/', 'data/肥猫.txt', 'okhttp/3.12.11')
+    fetch_and_save('http://xn--z7x900a.live/', 'data/肥猫TVBox.txt', 'okhttp/3.12.11')
