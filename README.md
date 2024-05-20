@@ -13,3 +13,5 @@ V2rayNG0订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VP
 V2rayNG1订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN1.txt
 
 V2rayNG2订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN2.txt
+
+V2rayNG3订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN3.txt
