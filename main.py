@@ -1,14 +1,17 @@
 import requests
 
-def fetch_and_save(url, save_path):
-    response = requests.get(url)
+def fetch_and_save(url, save_path, user_agent=None):
+    if user_agent:
+        headers = {'User-Agent': user_agent}
+        response = requests.get(url, headers=headers)
+    else:
+        response = requests.get(url)
     response.raise_for_status()
     with open(save_path, 'wb') as f:
         f.write(response.content)
 
 if __name__ == "__main__":
-    # 获取lives.txt文件,IPTV电视直播文件
+    # 获取lives.txt文件, IPTV电视直播文件
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
-    # 获取interface.json文件,tvbox文件
-    fetch_and_save('http://home.cymz.rr.nu/tvbox/interface.json', 'data/interface.json')
-
+    # 获取interface.json文件, tvbox文件
+    fetch_and_save('http://home.cymz.rr.nu/tvbox/interface.json', 'data/inter.json', 'okhttp/3.12.11')
