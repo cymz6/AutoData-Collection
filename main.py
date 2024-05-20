@@ -27,7 +27,7 @@ if __name__ == "__main__":
     timestamp = datetime.now().strftime("%Y%m%d%H%M")
     save_path_with_timestamp = f'last_update_time/last_update_time_{timestamp}.txt'
     fetch_and_save('https://quan.suning.com/getSysTime.do', save_path_with_timestamp)
-    # 获取lives.txt文件, diyp电视直播接口
+    # 获取diyp电视直播接口
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
-    # 获取tvbox.txt文件, tvbox肥猫接口
+    # 获取tvbox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
