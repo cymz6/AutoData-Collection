@@ -6,7 +6,6 @@ on:
   push:
     paths:
       - 'main.py'
-      - 'auto.py'
       - '.github/workflows/main.yml'
 
 jobs:
@@ -25,9 +24,6 @@ jobs:
 
     - name: Run main.py
       run: python main.py
-
-    - name: Run auto.py
-      run: python auto.py
 
     - name: Commit and push
       run: |
