@@ -7,10 +7,6 @@ def fetch_and_save(url, save_path, user_agent=None):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    # 如果目标文件已存在，则先删除它
-    if os.path.exists(save_path):
-        os.remove(save_path)
-
     # 根据是否提供了用户代理，发送请求
     if user_agent:
         headers = {'User-Agent': user_agent}
