@@ -8,7 +8,7 @@ TVBox巧技订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data
 
 TVBox肥猫订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/肥猫.txt
 
-V2rayNG0订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN.txt
+V2rayNG0订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN0.txt
 
 V2rayNG1订阅：https://raw.githubusercontent.com/cymz6/autoupdate/main/data/VPN1.txt
 
