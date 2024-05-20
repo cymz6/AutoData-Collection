@@ -1,5 +1,7 @@
 import requests
 import os
+import zipfile
+from datetime import datetime
 
 def fetch_and_save(url, save_path, user_agent=None):
     # 确保保存路径的目录存在，如果不存在则创建
@@ -38,3 +40,26 @@ if __name__ == "__main__":
     fetch_and_save('https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2', 'data/VPN2.txt')
     # 获取V2rayNG3接口
     fetch_and_save('https://www.xrayvip.com/free.txt', 'data/VPN3.txt')
+
+    # 获取当前日期
+    current_date = datetime.now().strftime("%Y%m%d")
+    zip_filename = f"{current_date}.zip"
+
+    # 创建zip文件
+    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        # 遍历data目录下的所有文件和目录
+        for root, dirs, files in os.walk('data'):
+            for file in files:
+                # 获取文件的完整路径
+                full_path = os.path.join(root, file)
+                # 将文件添加到zip文件中
+                zipf.write(full_path, os.path.relpath(full_path, 'data'))
+
+    # 将zip文件移动到codebak目录
+    codebak_dir = 'codebak'
+    if not os.path.exists(codebak_dir):
+        os.makedirs(codebak_dir)
+    zip_dest = os.path.join(codebak_dir, zip_filename)
+    os.rename(zip_filename, zip_dest)
+
+    print(f"Zip file '{zip_dest}' created successfully.")
