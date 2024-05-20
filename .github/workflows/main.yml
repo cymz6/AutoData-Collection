@@ -19,6 +19,9 @@ jobs:
       with:
         python-version: '3.x' # specify the Python version you want to use
 
+    - name: Remove data directory
+      run: rm -rf data
+
     - name: Install requests package
       run: pip install requests
 
