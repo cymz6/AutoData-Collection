@@ -22,7 +22,7 @@ def fetch_and_save(url, save_path, user_agent=None):
         f.write(response.content)
 
 if __name__ == "__main__":
-    # 获取lives.txt文件, diyp电视直播接口
+    # 获取lives.txt文件, diyp电视直播接口内容
     fetch_and_save('https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt', 'data/lives.txt')
     # 获取interface.json文件, tvbox肥猫接口
     fetch_and_save('http://xn--z7x900a.live/', 'data/tvbox_feimao.txt', 'okhttp/3.12.11')
