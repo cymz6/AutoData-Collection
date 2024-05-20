@@ -55,11 +55,11 @@ if __name__ == "__main__":
                 # 将文件添加到zip文件中
                 zipf.write(full_path, os.path.relpath(full_path, 'data'))
 
-    # 将zip文件移动到codebak目录
-    codebak_dir = 'codebak'
-    if not os.path.exists(codebak_dir):
-        os.makedirs(codebak_dir)
-    zip_dest = os.path.join(codebak_dir, zip_filename)
+    # 将zip文件移动到databak目录
+    databak_dir = 'databak'
+    if not os.path.exists(databak_dir):
+        os.makedirs(databak_dir)
+    zip_dest = os.path.join(databak_dir, zip_filename)
     os.rename(zip_filename, zip_dest)
 
     print(f"Zip file '{zip_dest}' created successfully.")
