@@ -27,8 +27,8 @@ jobs:
 
     - name: Commit and push
       run: |
-        git config --global user.name 'cymz6'
-        git config --global user.email '95021138@qq.com'
+        git config --local user.email "ssili@126.com"
+        git config --local user.name "ssili126"
         git add .
         git commit -m 'Automated update from main.py'
         git push -f
