@@ -4,7 +4,7 @@ import zipfile
 from datetime import datetime
 
 def fetch_and_save(url, save_path, user_agent=None):
-    # 确保保存路径的目录存在，如果不存在则创建
+    # 确保保存路径的目录存在，如果不存在则进行创建
     directory = os.path.dirname(save_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
