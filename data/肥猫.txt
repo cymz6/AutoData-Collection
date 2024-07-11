@@ -1,5 +1,5 @@
 {
-  "spider": "http://happy.xn--z7x900a.live/jar/PandaQ240706.jar;md5;384a04f3e3f53809edc4b5f4d08db447",
+  "spider": "http://happy.xn--z7x900a.live/jar/PandaQ240711.jar;md5;ba8110069297293eb2a9bdd190cff284",
   "wallpaper": "http://我不是.肥猫.live/ppic/feimao.php",
   "logo":"http://我不是.肥猫.live/fatcat.jpg",
   "sites": [
@@ -19,14 +19,14 @@
       "searchable": 0
     },
     {
-            "key": "csp_Duopan",
-            "name": "🖍︎┃蜡笔┃影视",
-            "type": 3,
-            "api": "csp_Duopan",
-            "playerType": 2,
-            "filterable": 1,
-            "ext": "https://duopan.fun/"
-        },
+      "key": "csp_Duopan",
+      "name": "🖍︎┃蜡笔┃影视",
+      "type": 3,
+      "api": "csp_Duopan",
+      "playerType": 2,
+      "filterable": 1,
+      "ext": "https://duopan.fun/"
+    },
     {
       "key": "nangua",
       "name": "🎃┃南瓜┃影视",
@@ -35,11 +35,11 @@
       "api": "http://js.xn--z7x900a.com/js/ng_open.js"
     },
     {
-            "key": "csp_KmeiJu",
-            "name": "🌎┃美剧┃影视",
-            "type": 3,
-            "api": "csp_KmeiJu",
-            "playerType": 2
+      "key": "csp_KmeiJu",
+      "name": "🌎┃美剧┃影视",
+      "type": 3,
+      "api": "csp_KmeiJu",
+      "playerType": 2
     },
     {
       "key": "新视觉",
@@ -51,6 +51,38 @@
       "filterable": 1
     },
     {
+      "key": "csp_SuBaiBai",
+      "name": "🏳️┃素白┃影视",
+      "type": 3,
+      "api": "csp_SuBaiBai"
+    },
+    {
+      "key": "csp_Zx1080",
+      "name": " 👰┃最新┃影视",
+      "type": 3,
+      "api": "csp_Zx1080",
+      "playerType": 2
+    },
+    {
+      "key": "csp_Ikan",
+      "name": "💕┃爱看┃影视",
+      "type": 3,
+      "api": "csp_Ikan",
+      "playerType": 2
+    },
+    {
+      "key": "csp_PTT",
+      "name": "🦨┃屁颠┃影视",
+      "type": 3,
+      "api": "csp_PTT"
+    },
+    {
+      "key": "csp_Taozi",
+      "name": "🍑┃桃子┃影视",
+      "type": 3,
+      "api": "csp_Taozi"
+    },
+    {
       "key": "哔嘀",
       "name": "😹┃哔嘀┃影视",
       "type": 3,
@@ -60,11 +92,11 @@
       "filterable": 1
     },
     {
-        "key": "csp_FengGo",
-        "name": "🐕┃疯狗┃影视",
-        "type": 3,
-        "api": "csp_FengGo",
-        "playerType": 2
+      "key": "csp_FengGo",
+      "name": "🐕┃疯狗┃影视",
+      "type": 3,
+      "api": "csp_FengGo",
+      "playerType": 2
     },
     {
       "key": "csp_Nkdy",
@@ -86,9 +118,18 @@
       "type": 3,
       "playerType": "2",
       "api": "csp_LiteApple",
-    "searchable": 1,
+      "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "csp_Netfixtv",
+      "name": "💌┃至臻┃影视",
+      "type": 3,
+      "api": "csp_Netfixtv",
+      "playerType": 2,
+      "filterable": 1,
+      "ext": ""
     },
     {
       "key": "csp_Panda_玩偶哥哥",
