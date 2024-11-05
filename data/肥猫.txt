@@ -1,5 +1,5 @@
 {
-  "spider": "http://我不是.肥猫.live/jar.php;md5;ab94379331e6c8b9611a8ef63e8c26f6",
+  "spider": "http://我不是.肥猫.live/jar.php;md5;8175ae9fb19e92f265dd8ee57a3bb7ae",
   "wallpaper": "http://like.xn--z7x900a.com/ppic/feimao.php",
   "logo": "https://like.xn--z7x900a.com/panda/0262.png",
   "sites": [
